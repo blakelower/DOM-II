@@ -18,3 +18,12 @@ const card = document.querySelector('aside');
 card.addEventListener('dblclick', function (e) {
   card.classList.toggle('large');
 });
+//select
+function logSelection(event) {
+    const log = document.getElementById('log');
+    const selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+    log.textContent = `You selected: ${selection}`;
+  }
+  
+  const input = document.querySelector('input');
+  input.addEventListener('select', logSelection);
