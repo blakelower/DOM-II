@@ -159,6 +159,18 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+.text-content {
+  background: #fe9;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 1em;
+  transform: scale(.9);
+  transform-origin: 0 0;
+  transition: transform .6s;
+}
+.large {
+  transform: scale(1.3);
+}
 img {
   max-width: 100%;
   height: auto;
@@ -167,6 +179,11 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.selecting{
+  display: flex;
+  justify-content: center;
+  background-color: orange;
 }
 @media (max-width: 500px) {
   .container {
@@ -198,6 +215,20 @@ img {
   .main-navigation .nav-container .logo-heading {
     font-size: 3rem;
   }
+}
+body .box{
+  min-height: 20vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div .box{
+  width: 105px;
+  height: 105px;
+  background: rgb(193, 134, 201);
+  padding: 5px;
 }
 .main-navigation .nav-container .nav {
   width: 350px;
@@ -246,6 +277,21 @@ img {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+#draggable {
+  margin: 0 auto;
+  width: 200px;
+  height: 20px;
+  background: white;
+
+}
+.dropzone {
+ margin: 0 auto;
+  width: 500px;
+  height: 0px;
+  background: green;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
